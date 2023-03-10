@@ -5,11 +5,11 @@ import java.awt.BorderLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class BorderLayout_Ex {
+public class BorderLayoutEx {
 
 	JFrame frame ;
 	
-	public BorderLayout_Ex() {
+	public  BorderLayoutEx() {
 		frame = new JFrame("Border Layout");
 		
 		JButton button  = new JButton("Kuzey");
@@ -34,8 +34,7 @@ public class BorderLayout_Ex {
 	
 	public static void main(String[] args) {
 		
-
-		new BorderLayout_Ex();
+		new BorderLayoutEx();
 	}
 
 }
