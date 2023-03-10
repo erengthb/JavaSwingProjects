@@ -2,8 +2,10 @@ package main_package;
 
 import java.awt.BorderLayout;
 
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 public class BorderLayoutEx {
 
@@ -26,7 +28,7 @@ public class BorderLayoutEx {
 		
 		frame.setSize(350,350);
 		frame.setVisible(true);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
 		
 	}
