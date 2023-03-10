@@ -1,0 +1,27 @@
+package main_package;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class BorderLayout {
+
+	JFrame frame ;
+	
+	public BorderLayout() {
+		frame = new JFrame("Border Layout");
+		
+		JButton button  = new JButton("Kuzey");
+		JButton button1 = new JButton("Güney");
+		JButton button2 = new JButton("Doğu ");
+		JButton button3 = new JButton("Batı");
+		JButton button4 = new JButton("Merkez");
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

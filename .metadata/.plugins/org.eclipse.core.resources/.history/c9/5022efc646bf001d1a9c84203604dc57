@@ -1,0 +1,17 @@
+package main_package;
+
+import javax.swing.JFrame;
+
+public class BorderLayout {
+
+	JFrame frame ;
+	
+	public BorderLayout() {
+		// TODO Auto-generated constructor stub
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package main_package;
+
+import javax.swing.JFrame;
+
+public class BorderLayout {
+
+	JFrame frame ;
+	
+	public BorderLayout() {
+		frame = new JFrame("Border Layout");
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
