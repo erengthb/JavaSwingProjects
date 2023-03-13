@@ -1,1 +1,37 @@
-/.metadata/
+version.ini
+.plugins/org.eclipse.jdt.core/variablesAndContainers.dat
+.plugins/org.eclipse.core.resources/.projects/*/.location
+ 
+log
+.metadata
+ 
+classes/
+ 
+#for all Java project
+*.class
+*.war
+*.ear
+### projenizi yerelde Git deponuzla paylaşırsanız bu dizin adresi de otomatik oluşur.
+/bin
+ 
+# Eclipse, NWDS
+.classpath
+.project
+### ide ayarları karışmaması için gönderilmeyebilir
+.settings/
+ 
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+ 
+# Mac
+.DS_Store
+ 
+# Maven
+log/
+target/
+ 
+# for this project
+#/src/local.myapp.properties
+bin/

@@ -1,19 +1,18 @@
 package main_package;
 
-
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
-public class GridLayoutEx {
-
-	JFrame frame ;
+public class FlowLayoutEx {
+JFrame frame ;
 	
-	public  GridLayoutEx() {
+	public  FlowLayoutEx() {
 	
-		frame = new JFrame("Grid  Layout");
+		frame = new JFrame("Flow  Layout");
 		
 		JButton button1  = new JButton("1");
 		JButton button2 = new JButton("2");
@@ -36,7 +35,7 @@ public class GridLayoutEx {
 		frame.add(button8);
 		frame.add(button9);
 		
-		frame.setLayout(new GridLayout(3,3));
+		frame.setLayout(new FlowLayout(FlowLayout.LEFT));
 		frame.setSize(350,350);
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -46,6 +45,6 @@ public class GridLayoutEx {
     
 	public static void main(String[] args) {
 		
-		new GridLayoutEx();
+		new FlowLayoutEx();
 	}
 }
