@@ -33,5 +33,5 @@ log/
 target/
  
 # for this project
-#/src/local.myapp.properties
+#/src/local.javaSwingProjects.properties
 bin/
