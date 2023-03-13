@@ -35,3 +35,5 @@ target/
 # for this project
 #/src/local.javaSwingProjects.properties
 bin/
+/Calculator/nbproject/private/
+/Calculator/build/
