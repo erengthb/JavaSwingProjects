@@ -15,8 +15,60 @@ public class Calculator extends javax.swing.JFrame {
     public Calculator() {
         initComponents();
         setLocationRelativeTo(null);
+        jRadioButton2.setEnabled(false);
+        closeWindow();
     }
-
+    public  void openWindow(){
+        jTextField1.setEnabled(true);
+        jButton2.setEnabled(true);
+        jButton3.setEnabled(true);
+        jButton4.setEnabled(true);
+        jButton5.setEnabled(true);
+        jButton6.setEnabled(true);
+        jButton7.setEnabled(true);
+        jButton8.setEnabled(true);
+        jButton9.setEnabled(true);
+        jButton10.setEnabled(true);
+        jButton11.setEnabled(true);
+        jButton12.setEnabled(true);
+        jButton13.setEnabled(true);
+        jButton14.setEnabled(true);
+        jButton15.setEnabled(true);
+        jButton16.setEnabled(true);
+        jButton17.setEnabled(true);
+        jButton18.setEnabled(true);
+        jButton19.setEnabled(true);
+       jRadioButton3.setEnabled(true);
+       jRadioButton4.setEnabled(true);
+        
+        
+    }
+    
+    public void closeWindow(){
+        
+        jTextField1.setEnabled(false);
+        jButton2.setEnabled(false);
+        jButton3.setEnabled(false);
+        jButton4.setEnabled(false);
+        jButton5.setEnabled(false);
+        jButton6.setEnabled(false);
+        jButton7.setEnabled(false);
+        jButton8.setEnabled(false);
+        jButton9.setEnabled(false);
+        jButton10.setEnabled(false);
+        jButton11.setEnabled(false);
+        jButton12.setEnabled(false);
+        jButton13.setEnabled(false);
+        jButton14.setEnabled(false);
+        jButton15.setEnabled(false);
+        jButton16.setEnabled(false);
+        jButton17.setEnabled(false);
+        jButton18.setEnabled(false);
+        jButton19.setEnabled(false);
+       jRadioButton3.setEnabled(false);
+       jRadioButton4.setEnabled(false);
+        
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -57,11 +109,30 @@ public class Calculator extends javax.swing.JFrame {
         setTitle("Calculator");
         setType(java.awt.Window.Type.UTILITY);
 
+        jTextField1.setEditable(false);
+        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setText("ON");
+        jRadioButton1.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jRadioButton1İtemStateChanged(evt);
+            }
+        });
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setText("OFF");
+        jRadioButton2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jRadioButton2İtemStateChanged(evt);
+            }
+        });
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton2ActionPerformed(evt);
@@ -404,6 +475,23 @@ public class Calculator extends javax.swing.JFrame {
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jRadioButton2İtemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jRadioButton2İtemStateChanged
+        closeWindow();
+        jRadioButton2.setEnabled(false);
+        jRadioButton1.setEnabled(true);
+     
+    }//GEN-LAST:event_jRadioButton2İtemStateChanged
+
+    private void jRadioButton1İtemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jRadioButton1İtemStateChanged
+      openWindow();
+      jRadioButton2.setEnabled(true);
+      jRadioButton1.setEnabled(false);
+    }//GEN-LAST:event_jRadioButton1İtemStateChanged
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     /**
      * @param args the command line arguments
