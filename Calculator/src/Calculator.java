@@ -149,6 +149,11 @@ public class Calculator extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton3.setText("<--");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton4.setText("C");
@@ -502,6 +507,19 @@ public class Calculator extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         jTextField1.setText(" ");
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       int length = jTextField1.getText().length();
+       int numbers = jTextField1.getText().length()-1;
+       String memory  ;
+       
+       if ( length >0){
+           StringBuilder back = new StringBuilder(jTextField1.getText());   
+           back.deleteCharAt(numbers);
+           memory = back.toString();
+           jTextField1.setText(memory);
+       }
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
