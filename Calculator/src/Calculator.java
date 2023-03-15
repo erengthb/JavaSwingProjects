@@ -2,6 +2,9 @@
 import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.PlainDocument;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -12,6 +15,25 @@ import javax.swing.JOptionPane;
  *
  * @author Eren
  */
+
+class textLimit extends PlainDocument {
+    
+    private int limit = 14 ;
+    
+   
+    public void insertString (int empty , String str , AttributeSet a) throws BadLocationException{
+        
+        if((getLength()+str.length())> limit ){
+            
+            str = str.substring(0, limit-getLength());
+            JOptionPane.showMessageDialog(null, "Character must be 14");
+        }
+        super.insertString(empty, str, a);
+        
+    }
+    
+}
+
 public class Calculator extends javax.swing.JFrame {
 
     double num ,result ;
@@ -21,8 +43,11 @@ public class Calculator extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         jRadioButton2.setEnabled(false);
-        closeWindow();
         jPanel1.setBackground(new Color (204,255,204));
+        // jTextfield limit function
+        jTextField1.setDocument(new textLimit());
+        closeWindow();
+       
     }
     
     
