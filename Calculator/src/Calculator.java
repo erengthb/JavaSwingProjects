@@ -1,5 +1,7 @@
 
 import java.awt.Color;
+import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.text.AttributeSet;
@@ -47,7 +49,10 @@ public class Calculator extends javax.swing.JFrame {
         // jTextfield limit function
         jTextField1.setDocument(new textLimit());
         closeWindow();
-       
+        
+        //icon
+        Image icon = Toolkit.getDefaultToolkit().getImage("C:\\Users\\Eren\\Desktop\\Workspace\\JavaSwingProjects\\Calculator\\calculator-icon.png");
+        setIconImage(icon);
     }
     
     
@@ -183,7 +188,6 @@ public class Calculator extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculator");
         setBackground(new java.awt.Color(204, 255, 204));
-        setType(java.awt.Window.Type.UTILITY);
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
